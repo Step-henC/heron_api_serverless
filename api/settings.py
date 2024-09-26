@@ -27,6 +27,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', 'localhost']
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+    'https://www.herondata.dev',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://www.herondata.dev',
+]
+
 
 # Application definition
 
@@ -49,7 +58,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-         'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+     'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'api.urls'
@@ -80,10 +90,7 @@ WSGI_APPLICATION = 'api.wsgi.app'
 
 DATABASES = {}
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'https://www.herondata.dev',
-]
+
 
 
 # Password validation

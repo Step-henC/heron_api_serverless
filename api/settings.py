@@ -82,7 +82,7 @@ DATABASES = {}
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://herondata.dev',
+    'https://www.herondata.dev',
 ]
 
 

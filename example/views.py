@@ -69,14 +69,14 @@ def index(request):
         parsedProteinName = parseSialicAcidFromString(proteinName)
         parsedGalNacName = parseGalNacsFromString(proteinName)
 
-        # add to sheet. TODO: consider maps for constant lookup times
-        if parsedProteinName in groupedSheetsByGalNacGal.keys():
+        # add to sheet. 
+        if parsedProteinName in groupedSheetsByGalNacGal:
           groupedSheetsByGalNacGal[parsedProteinName] += [dictForDataframe]
         else: 
           groupedSheetsByGalNacGal[parsedProteinName] = []
           groupedSheetsByGalNacGal[parsedProteinName]  += [dictForDataframe]
 
-        if parsedGalNacName in groupedSheetsByGalNac.keys():
+        if parsedGalNacName in groupedSheetsByGalNac:
            groupedSheetsByGalNac[parsedGalNacName] += [dictForDataframe]
         else:
            groupedSheetsByGalNac[parsedGalNacName] = []

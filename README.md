@@ -93,6 +93,9 @@ This example uses the Web Server Gateway Interface (WSGI) with Django to enable 
 
 ## Running Locally
 
+Make sure you create a virtual env. With VSCode, you can cmd + Shift + P and select create venv.
+When using postman, select `Send` dropdown and select `Send and download`
+
 ```bash
 python manage.py runserver
 ```

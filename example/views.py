@@ -34,7 +34,6 @@ def parseGalNacsFromString(proteinNameString): # receives str from parseSialicAc
     if re.search('Gal[0-9]{1,}$', proteinNameString): # the result is SA1GalNac3Gal2 -> GalNac3
         saGalNac = re.split("Gal[0-9]{1,}$", proteinNameString)[0]
         galNac = re.sub('^SA[0-9]', "", saGalNac)
-        print(galNac)
     return galNac
 
 @csrf_exempt

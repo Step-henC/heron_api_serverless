@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "c36520d4-6641-4226-b35d-38a42ef248a6",
+		"name": "Heron Glyco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32327161"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/Users/stephencunningham/Desktop/20240507_glyco_rapi_finalruns_mIgA_heron.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -34,6 +34,8 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     'https://www.herondata.dev',
+    'https://www.herondata.app',
+
 ]
 
 
@@ -46,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'example',
+    'glyco',
      'corsheaders'
 ]
 

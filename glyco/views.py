@@ -173,3 +173,6 @@ def index(request):
     
   else:
     return HttpResponse('Heron Data Copyright 2025')
+  
+
+  

@@ -41,7 +41,6 @@ def parseSA(str):
 def transformHivData(request):
   
   if request.method == 'POST':
-      #return HttpResponse('Not Yet Implemented')
       data = json.loads(request.body)
       # converting to string now, but may send data as a json string?
       jsonString = json.dumps(data)

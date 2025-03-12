@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', 'localhost']
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'https://www.herondata.dev',
+     'https://www.herondata.app',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
